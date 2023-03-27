@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-		window.onload = function() {
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', '.Baskent Ses Kutuphanesi/');
-			xhr.onload = function() {
-				var files = xhr.responseXML.getElementsByTagName('a');
-				var list = document.createElement('ul');
-				for (var i = 0; i < files.length; i++) {
-					var item = document.createElement('li');
-					item.innerHTML = files[i].innerHTML;
-					list.appendChild(item);
-				}
-				document.body.appendChild(list);
-			};
-			xhr.send();
-		};
-	</script>
 </head>
+
 <body>
     <div>
         <h2>ahize açma kapama</h2>
         <audio controls>
-        <source src="Baskent Ses Kutuphanesi/ahize açma kapama.mp3" type="audio/mpeg"> 
+            <source src="Baskent Ses Kutuphanesi/ahize açma kapama.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
-    
+
     <div>
         <h2>alev_tutuşma-sesi</h2>
         <audio controls>
-        <source src="Baskent Ses Kutuphanesi/alev_tutuşma-sesi.mp3" type="audio/mpeg"> 
+            <source src="Baskent Ses Kutuphanesi/alev_tutuşma-sesi.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
-    
+
 </body>
+
 </html>
